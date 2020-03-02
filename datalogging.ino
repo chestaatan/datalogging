@@ -11,7 +11,8 @@ void setup() {
 void loop() {
   val = analogRead(analogPin);  // read the input pin
 
-  temp = map(val, 0, 1023, -20.0, 80.0);
+  temp = map(val, 205, 1023, -20.0, 80.0);
+  
   Serial.print("Temperature = ");
   Serial.println(temp);
     
